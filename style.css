@@ -458,3 +458,105 @@ header {
 .active::after {
   width: 100%;
 }
+
+.new {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.new__container {
+    position: absolute;
+    width: 100%;
+    max-width: 1338px;
+    margin: 0 auto;
+    display: flex;
+    gap: 34px;
+    align-items: center;
+    margin-bottom: 20px;
+    left: 50%px;
+}
+
+.new__container--box {
+    position: relative;
+    overflow: hidden;
+    height: 340px;
+    width: 500px;
+}
+
+.new__container--box--house {
+    width: 100%;
+    display: block;
+}
+
+
+.new__container--box--uptitle {
+    position: absolute;
+    z-index: 3;
+    padding: 8px 33px 9px 36px;
+    background-color: #141414;
+    color: #ffffff;
+    font-family: Open Sans;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 11px;
+    line-height: 16.32px;
+    letter-spacing: 2.72px;
+    text-transform: uppercase;
+    width: 106px;
+}
+
+.new__container--box--lines {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    z-index: 2;
+    pointer-events: none;
+}
+
+
+.new__container--box--dsgn {
+    position: absolute;
+    bottom: 70px;
+    z-index: 3;
+    background-color: #99823D;
+    color: #ffffff;
+    padding: 10px 20px;
+    font-family: Open Sans;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 11px;
+    leading-trim: NONE;
+    line-height: 34px;
+    letter-spacing: 2.76px;
+    text-transform: uppercase;
+    padding: 0px 30px 68px 33px;
+    bottom: 0;
+    right: 0;
+}
+
+.new__container--box--title {
+    width: 100%;
+    max-width: 390px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 4;
+    background-color: #000000;
+    color: #ffffff;
+    font-family: Teko;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 26px;
+    line-height: 26.11px;
+    letter-spacing: 0%;
+    text-align: center;
+    text-transform: capitalize;
+    padding: 15px 96px 26px 96px;
+}
+
+.new__dot {}
