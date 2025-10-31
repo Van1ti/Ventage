@@ -132,8 +132,11 @@ header {
     width: 100%;
     max-width: 1304px;
     margin: 0 auto;
-    display: flex;
     position: relative;
+}
+
+.header__bottom--social {
+    display: grid;
 }
 
 
@@ -145,25 +148,28 @@ header {
     gap: 37px;
     align-items: center;
     background-color: #EBEBEB;
+    padding-left: 3px;
 }
 
 .header__bottom--social--container--link {
+    position: relative;
     font-family: Open Sans;
     font-weight: 400;
-    font-style: Regular;
+    font-style: normal;
     font-size: 12px;
     line-height: 68px;
     letter-spacing: 2.97px;
     text-transform: uppercase;
     color: #000000;
     text-decoration: none;
+    transition: color 0.3s ease;
 }
 
-.header__bottom--social--container--link:after {
+.header__bottom--social--container--link::after {
     content: "";
     position: absolute;
+    bottom: 0;
     left: 0;
-    bottom: -8px;
     width: 0;
     height: 4px;
     background: #99823D;
@@ -176,11 +182,15 @@ header {
 }
 
 .header__bottom--social--container--link:hover::after {
-    width: 815px;
+    width: 100%;
 }
 
 .active {
     color: #99823D;
+}
+
+.active::after {
+    width: 100%;
 }
 
 
@@ -280,7 +290,7 @@ header {
 
 .ourJob {
     width: 100%;
-    max-width: 1312px;
+    max-width: 1180px;
     margin: 0 auto;
     padding-top: 136px;
     display: flex;
@@ -381,7 +391,7 @@ header {
 
 .numbers {
     width: 100%;
-    max-width: 1312px;
+    max-width: 1180px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -656,6 +666,7 @@ header {
     box-shadow: none;
     padding: 25px 118px 18px 122px;
     margin-bottom: 108px;
+    cursor: pointer;
 }
 
 .sponsors {
@@ -697,6 +708,7 @@ header {
 }
 
 .footer_top--container--nav--link {
+    position: relative;
     font-family: Open Sans;
     font-weight: 400;
     font-style: Regular;
@@ -706,6 +718,34 @@ header {
     text-align: center;
     text-transform: uppercase;
     color: #FFFFFF;
+}
+
+.footer_top--container--nav--link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 4px;
+    background: #99823D;
+    border-radius: 3px;
+    transition: width 0.3s ease;
+}
+
+.footer_top--container--nav--link:hover {
+    color: #99823D;
+}
+
+.footer_top--container--nav--link:hover::after {
+    width: 100%;
+}
+
+.active {
+    color: #99823D;
+}
+
+.active::after {
+    width: 100%;
 }
 
 .footer {
@@ -762,6 +802,7 @@ header {
     background-color: #141414;
     padding: 17px 36px 17px 37px;
     border: none;
+    cursor: pointer;
 }
 
 .footer_container--nav {
@@ -770,10 +811,10 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
 }
 
 .footer_container--nav--link {
+    position: relative;
     font-family: Open Sans;
     font-weight: 400;
     font-style: Regular;
@@ -785,20 +826,21 @@ header {
     color: #FFFFFF;
 }
 
-.footer_container--nav--link:after {
+
+.footer_container--nav--link::after {
     content: "";
     position: absolute;
+    bottom: 0;
     left: 0;
-    bottom: -8px;
     width: 0;
     height: 4px;
-    background: #FFFFFF;
+    background: #99823D;
     border-radius: 3px;
     transition: width 0.3s ease;
 }
 
 .footer_container--nav--link:hover {
-    color: #FFFFFF;
+    color: #99823D;
 }
 
 .footer_container--nav--link:hover::after {
@@ -806,12 +848,13 @@ header {
 }
 
 .active {
-    color: #FFFFFF;
+    color: #99823D;
 }
 
 .active::after {
     width: 100%;
 }
+
 
 .footer_container--powerd {
     display: flex;
@@ -824,7 +867,6 @@ header {
     font-weight: 400;
     font-style: Regular;
     font-size: 11px;
-    leading-trim: NONE;
     line-height: 34px;
     letter-spacing: 2.76px;
     text-align: center;
@@ -837,7 +879,6 @@ header {
     font-weight: 400;
     font-style: Regular;
     font-size: 11px;
-    leading-trim: NONE;
     line-height: 34px;
     letter-spacing: 2.76px;
     text-align: center;
@@ -852,13 +893,13 @@ header {
     bottom: -8px;
     width: 0;
     height: 4px;
-    background: #FFFFFF;
+    background: #99823D;
     border-radius: 3px;
     transition: width 0.3s ease;
 }
 
 .footer_container--powerd--link:hover {
-    color: #FFFFFF;
+    color: #99823D;
 }
 
 .footer_container--powerd--link:hover::after {
@@ -866,5 +907,5 @@ header {
 }
 
 .active {
-    color: #FFFFFF;
+    color: #99823D;
 }
