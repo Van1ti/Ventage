@@ -24,9 +24,7 @@ header {
     max-width: 1304px;
     display: flex;
     align-items: center;
-
     justify-content: end;
-
     position: relative;
     margin: 0 auto;
 }
@@ -139,7 +137,6 @@ header {
     display: grid;
 }
 
-
 .header__bottom--social--container {
     width: 100%;
     max-width: 978px;
@@ -214,7 +211,6 @@ header {
     letter-spacing: 2.76px;
     text-transform: uppercase;
     color: #99823D;
-
 }
 
 
@@ -473,7 +469,6 @@ header {
     align-items: center;
     margin-bottom: 20px;
     left: 50%px;
-
 }
 
 .new__container--box {
